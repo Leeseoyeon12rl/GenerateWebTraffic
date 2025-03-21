@@ -1,0 +1,862 @@
+2025-03-18 02:19:06,065 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 02:19:06,598 - INFO - Selenium 트래픽 생성 종료
+2025-03-18 02:19:11,142 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 02:19:11,142 - INFO - Kafka Producer 실행 시작
+2025-03-18 02:19:11,148 - INFO - Kafka Consumer 실행 시작
+2025-03-18 02:19:11,521 - INFO - Kafka Producer 실행 종료
+2025-03-18 02:19:11,522 - INFO - Kafka Consumer 실행 종료
+2025-03-18 02:23:24,142 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 02:23:29,210 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 02:23:29,229 - INFO - Kafka Producer 실행 시작
+2025-03-18 02:23:29,230 - INFO - Kafka Consumer 실행 시작
+2025-03-18 02:23:29,585 - INFO - Kafka Consumer 실행 종료
+2025-03-18 02:23:29,585 - INFO - Kafka Producer 실행 종료
+2025-03-18 02:24:09,696 - INFO - Selenium 트래픽 생성 종료
+2025-03-18 02:25:50,367 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 02:25:55,419 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 02:25:55,428 - INFO - Kafka Producer 실행 시작
+2025-03-18 02:25:55,435 - INFO - Kafka Consumer 실행 시작
+2025-03-18 02:25:55,719 - INFO - Kafka Producer 실행 종료
+2025-03-18 02:25:55,730 - INFO - Kafka Consumer 실행 종료
+2025-03-18 02:29:15,810 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 02:29:20,864 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 02:29:20,873 - INFO - Kafka Producer 실행 시작
+2025-03-18 02:29:20,877 - INFO - Kafka Consumer 실행 시작
+2025-03-18 02:29:24,461 - INFO - Kafka Consumer 실행 종료
+2025-03-18 02:29:25,933 - INFO - Kafka Producer 실행 종료
+2025-03-18 03:12:13,041 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:12:13,052 - INFO - Broker version identified as 2.6
+2025-03-18 03:12:13,052 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:12:13,065 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:12:13,066 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:12:13,066 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 03:12:13,066 - INFO - Kafka 실행 확인 완료!
+2025-03-18 03:12:13,068 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:13,080 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:13,085 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:13,106 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:13,106 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:13,107 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:13,186 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:18,188 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:18,194 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:18,195 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:18,305 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:18,317 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed'), '::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed')})
+2025-03-18 03:12:18,317 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:18,397 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:23,400 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:23,435 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:23,437 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:23,461 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:23,463 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:23,464 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:23,538 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:28,541 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:28,554 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:28,555 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:28,674 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:28,676 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:28,676 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:28,757 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:33,760 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:33,771 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:33,772 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:33,894 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:33,895 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:33,974 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:38,978 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:39,006 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:39,008 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:39,132 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:39,133 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed'), '::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed')})
+2025-03-18 03:12:39,134 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:39,210 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:44,213 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:44,227 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:44,229 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:44,232 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:44,233 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:44,234 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:44,330 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:49,334 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:49,360 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:49,361 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:49,365 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:49,366 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:49,366 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:49,463 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:54,465 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:54,472 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:54,474 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:54,596 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:54,597 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 03:12:54,597 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:54,675 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:12:59,678 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:12:59,699 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 03:12:59,700 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 03:12:59,704 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 03:12:59,706 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed'), '::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed')})
+2025-03-18 03:12:59,706 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 03:12:59,803 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 03:13:04,806 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:13:04,856 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:13:04,986 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:13:05,192 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 03:13:05,192 - INFO - Cassandra host ::1:9042 removed
+2025-03-18 03:13:06,348 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 03:13:06,348 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 03:13:09,231 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 03:14:35,503 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:14:35,511 - INFO - Broker version identified as 2.6
+2025-03-18 03:14:35,511 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:14:35,519 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:14:35,520 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:14:35,520 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 03:14:35,520 - INFO - Kafka 실행 확인 완료!
+2025-03-18 03:14:35,522 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:14:35,545 - WARNING - Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:14:35,652 - WARNING - Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:14:35,799 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 03:14:35,800 - INFO - Cassandra host 127.0.0.1:9042 removed
+2025-03-18 03:14:37,054 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 03:14:37,054 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 03:14:39,613 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 03:14:40,965 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 03:14:46,653 - INFO - Kafka Producer 실행 시작
+2025-03-18 03:14:46,701 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 03:14:46,702 - INFO - Kafka Consumer 실행 시작
+2025-03-18 03:15:19,039 - INFO - Selenium 트래픽 생성 종료
+2025-03-18 03:43:19,969 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:43:19,976 - INFO - Broker version identified as 2.6
+2025-03-18 03:43:19,977 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:43:19,984 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:43:19,985 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:43:19,985 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 03:43:19,985 - INFO - Kafka 실행 확인 완료!
+2025-03-18 03:43:19,986 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:43:20,024 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:43:20,163 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:43:20,337 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 03:43:20,337 - INFO - Cassandra host ::1:9042 removed
+2025-03-18 03:43:21,585 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 03:43:21,585 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 03:43:24,145 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 03:43:25,437 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 03:43:30,811 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 03:43:30,835 - INFO - Kafka Consumer 실행 시작
+2025-03-18 03:43:30,836 - INFO - Kafka Producer 실행 시작
+2025-03-18 03:43:49,254 - INFO - Kafka Consumer 실행 종료
+2025-03-18 03:49:58,589 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:49:58,596 - INFO - Broker version identified as 2.6
+2025-03-18 03:49:58,596 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:49:58,604 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 03:49:58,605 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 03:49:58,605 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 03:49:58,605 - INFO - Kafka 실행 확인 완료!
+2025-03-18 03:49:58,607 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 03:49:58,649 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:49:58,785 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 03:49:58,956 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 03:49:58,956 - INFO - Cassandra host ::1:9042 removed
+2025-03-18 03:50:00,281 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 03:50:00,282 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 03:50:02,781 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 03:50:04,144 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 03:50:09,426 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 03:50:09,438 - INFO - Kafka Consumer 실행 시작
+2025-03-18 03:50:27,367 - INFO - Kafka Producer 실행 종료
+2025-03-18 03:50:27,647 - INFO - Kafka Consumer 실행 종료
+2025-03-18 03:51:48,665 - INFO - Selenium 트래픽 생성 종료
+2025-03-18 04:07:44,161 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 04:07:44,170 - INFO - Broker version identified as 2.6
+2025-03-18 04:07:44,171 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 04:07:44,178 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 04:07:44,178 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 04:07:44,179 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 04:07:44,179 - INFO - Kafka 실행 확인 완료!
+2025-03-18 04:07:44,180 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 04:07:44,201 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 04:07:44,337 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 04:07:44,494 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 04:07:44,494 - INFO - Cassandra host ::1:9042 removed
+2025-03-18 04:07:45,737 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 04:07:45,737 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 04:07:48,279 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 04:07:49,665 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 04:07:49,665 - INFO - Kafka Producer 실행 시작
+2025-03-18 04:07:49,676 - INFO - Kafka Consumer 실행 시작
+2025-03-18 04:07:49,679 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 04:33:46,419 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 04:33:46,426 - INFO - Broker version identified as 2.6
+2025-03-18 04:33:46,427 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 04:33:46,433 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 04:33:46,434 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 04:33:46,434 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 04:33:46,434 - INFO - Kafka 실행 확인 완료!
+2025-03-18 04:33:46,436 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 04:33:46,474 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 04:33:46,613 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 04:33:46,795 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 04:33:46,795 - INFO - Cassandra host ::1:9042 removed
+2025-03-18 04:33:48,044 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 04:33:48,044 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 04:33:50,597 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 04:33:52,046 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 04:33:52,065 - INFO - Kafka Producer 실행 시작
+2025-03-18 04:33:52,068 - INFO - Kafka Consumer 실행 시작
+2025-03-18 11:03:49,949 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:49,968 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: socket disconnected
+2025-03-18 11:03:49,968 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: socket disconnected
+2025-03-18 11:03:49,969 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-03-18 11:03:49,973 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: socket disconnected
+2025-03-18 11:03:49,974 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: socket disconnected
+2025-03-18 11:03:49,974 - WARNING - No node available during check_version; sleeping 0.04 secs
+2025-03-18 11:03:50,016 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:50,025 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: socket disconnected
+2025-03-18 11:03:50,025 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: socket disconnected
+2025-03-18 11:03:50,026 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-03-18 11:03:50,028 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: socket disconnected
+2025-03-18 11:03:50,028 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: socket disconnected
+2025-03-18 11:03:50,029 - WARNING - No node available during check_version; sleeping 0.08 secs
+2025-03-18 11:03:50,113 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:50,119 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: socket disconnected
+2025-03-18 11:03:50,119 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: socket disconnected
+2025-03-18 11:03:50,120 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-03-18 11:03:50,121 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:50,122 - WARNING - No node available during check_version; sleeping 0.19 secs
+2025-03-18 11:03:50,311 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:50,313 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:50,313 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-03-18 11:03:50,313 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:50,313 - WARNING - No node available during check_version; sleeping 0.40 secs
+2025-03-18 11:03:50,713 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:50,714 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:50,715 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-03-18 11:03:50,716 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:50,716 - WARNING - No node available during check_version; sleeping 0.75 secs
+2025-03-18 11:03:51,467 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:51,469 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:51,470 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-03-18 11:03:51,471 - ERROR - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: Unable to determine broker version.
+2025-03-18 11:03:51,471 - WARNING - No node available during check_version; sleeping 0.46 secs
+2025-03-18 11:03:51,933 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:03:56,939 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:03:58,942 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:03,945 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:05,950 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:10,955 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:12,963 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:17,967 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:19,971 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:24,974 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:26,987 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:31,991 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:33,991 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:38,994 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:41,002 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:46,005 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:48,010 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:04:53,014 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:04:55,024 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:00,033 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:02,033 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:07,039 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:09,050 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:14,059 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:16,067 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:21,076 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:23,085 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:28,089 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:30,090 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:35,094 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:37,098 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:42,103 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:44,103 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:49,110 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:51,117 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:05:56,126 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:05:58,130 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:06:03,133 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:06:05,142 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:06:10,146 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:06:10,356 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:06:15,358 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:06:17,362 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:12:20,633 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:12:20,651 - INFO - Broker version identified as 2.6
+2025-03-18 11:12:20,651 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 11:12:20,669 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-18 11:12:20,670 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-18 11:12:20,670 - INFO - <BrokerConnection client_id=kafka-python-2.1.1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-18 11:12:20,671 - INFO - Kafka 실행 확인 완료!
+2025-03-18 11:12:20,674 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 11:12:20,688 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 11:12:20,695 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 11:12:20,700 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 11:12:20,701 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed'), '::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed')})
+2025-03-18 11:12:20,701 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 11:12:20,796 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 11:12:25,798 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 11:12:25,810 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 11:12:25,813 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 11:12:25,952 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 11:12:25,954 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 11:12:25,954 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 11:12:26,017 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 11:12:31,019 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 11:12:31,029 - WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to ::1:9042 was closed
+2025-03-18 11:12:31,031 - WARNING - Host ::1:9042 has been marked down
+2025-03-18 11:12:31,184 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-03-18 11:12:31,185 - ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\a0107\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': ConnectionShutdown('Connection to ::1:9042 was closed'), '127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-03-18 11:12:31,185 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-03-18 11:12:31,232 - WARNING - Cassandra 실행 대기 중...
+2025-03-18 11:12:36,236 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2025-03-18 11:12:36,277 - WARNING - Downgrading core protocol version from 66 to 65 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 11:12:36,440 - WARNING - Downgrading core protocol version from 65 to 5 for ::1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-03-18 11:12:36,754 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '::1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-03-18 11:12:36,754 - INFO - Cassandra host 127.0.0.1:9042 removed
+2025-03-18 11:12:37,915 - INFO - Cassandra 실행 확인 완료!
+2025-03-18 11:12:37,916 - INFO - Cassandra Keyspace & 테이블 생성 중...
+2025-03-18 11:12:41,299 - INFO - Cassandra Keyspace & 테이블 생성 완료!
+2025-03-18 11:12:43,206 - INFO - Scapy 패킷 캡처 시작
+2025-03-18 11:12:43,211 - INFO - Selenium 트래픽 생성 시작
+2025-03-18 11:12:43,241 - INFO - Kafka Producer 실행 시작
+2025-03-18 11:12:43,245 - INFO - Kafka Consumer 실행 시작
+2025-03-18 11:16:31,664 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:16:36,666 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:16:41,667 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:16:46,669 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:16:51,673 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:16:56,676 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:01,682 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:06,684 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:11,688 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:16,690 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:21,692 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:26,694 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:31,697 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:36,698 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:41,700 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:46,702 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:51,704 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:17:56,706 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:18:01,711 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:18:06,714 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:18:11,716 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:18:16,720 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:24,150 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:29,152 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:34,155 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:39,158 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:44,162 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:49,166 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:54,171 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:19:59,173 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:20:04,177 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:20:09,178 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:20:14,186 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:21:43,902 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:21:48,905 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:21:53,907 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:21:58,910 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:03,914 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:08,918 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:13,922 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:18,926 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:23,933 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:28,936 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:33,939 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:38,943 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:43,947 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:22:48,950 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:14,020 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:19,021 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:24,023 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:29,025 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:34,027 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:39,030 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:44,032 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:49,034 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:54,037 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:25:59,040 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:04,042 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:09,044 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:14,046 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:19,048 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:24,050 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:29,052 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:34,055 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:39,094 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:44,097 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:49,100 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:54,103 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:26:59,107 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:04,109 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:09,112 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:14,117 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:19,119 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:24,122 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:29,123 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:34,127 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:39,131 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:44,136 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:49,137 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:54,140 - WARNING - Kafka 실행 대기 중...
+2025-03-18 11:27:59,142 - WARNING - Kafka 실행 대기 중...
