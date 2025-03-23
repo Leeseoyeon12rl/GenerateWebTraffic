@@ -1,4 +1,4 @@
-# NetworkTrafficDataCrawling_and_loading_to_Cassandra_
+# GenerateWebTraffic
 ## 📡 Real-Time Network Traffic Capture & Analysis
 
 This project sets up a complete pipeline for real-time https network traffic analysis. It generates web traffic using Selenium, captures packets using Scapy, streams the data via Apache Kafka, and stores it in Apache Cassandra. The system demonstrates key features such as counters, TTL-based expiration, and partitioned queries in Cassandra.
@@ -39,7 +39,7 @@ KAFKA_BROKER=localhost:9092
 CASSANDRA_HOST=localhost
 CASSANDRA_KEYSPACE=nw_traffic_data
 CASSANDRA_TABLE=network_traffic
-CRAWLING_DURATION=15
+TRAFFIC_DURATION=15
 WEBSITES=https://www.google.com,https://www.wikipedia.org,...
 ```
 
@@ -88,7 +88,7 @@ kafka_producer.py: Sends data to Kafka
 kafka_consumer.py: Inserts data into Cassandra
 ```
 
-It will run for the duration set in CRAWLING_DURATION.
+It will run for the duration set in TRAFFIC_DURATION.
 
 ## 🔍 Example Queries (See QUERY.md)
 
