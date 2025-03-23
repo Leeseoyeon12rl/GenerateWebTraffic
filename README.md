@@ -32,7 +32,6 @@ https://www.docker.com/
 
 Update the .env file according to your environment:
 ```
-
 CSV_FILE="nw_traffic_log.csv"
 MY_IP=localhost  # Or your actual IP address
 KAFKA_BROKER=localhost:9092
