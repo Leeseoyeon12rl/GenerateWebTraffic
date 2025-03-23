@@ -19,7 +19,7 @@ load_dotenv()
 
 KAFKA_BROKER = os.getenv("KAFKA_BROKER", "localhost:9092")
 CASSANDRA_HOST = os.getenv("CASSANDRA_HOST", "localhost")
-CRAWLING_DURATION = int(os.getenv("CRAWLING_DURATION"))
+TRAFFIC_DURATION = int(os.getenv("TRAFFIC_DURATION"))
 
 
 # scripts to run
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     for process in processes:
         process.start()
 
-    time.sleep(CRAWLING_DURATION)
+    time.sleep(TRAFFIC_DURATION)
 
     for process in processes:
         process.kill()
