@@ -14,7 +14,7 @@ from stem.control import Controller
 from stem import Signal
 #TOR_CONTROL_PORT=os.getenv("TOR_CONTROL_PORT")
 #TOR_PROXY=os.getenv("TOR_PROXY")
-CRAWLING_DURATION=int(os.getenv("CRAWLING_DURATION"))
+TRAFFIC_DURATION=int(os.getenv("TRAFFIC_DURATION"))
 WEBSITES=os.getenv("WEBSITES", "").split(",")
 
 '''
@@ -89,7 +89,7 @@ for url in WEBSITES:
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")  # 스크롤 내리기
     time.sleep(random.uniform(2,4))
 
-    if time.time() - start_time > CRAWLING_DURATION:
+    if time.time() - start_time > TRAFFIC_DURATION:
         break
 
 driver.quit()
